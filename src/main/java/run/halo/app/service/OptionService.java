@@ -1,6 +1,5 @@
 package run.halo.app.service;
 
-import com.qiniu.common.Zone;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 import org.springframework.transaction.annotation.Transactional;
@@ -267,8 +266,8 @@ public interface OptionService extends CrudService<Option, Integer> {
      *
      * @return qiniu zone
      */
-    @NonNull
-    Zone getQnYunZone();
+//    @NonNull
+//    Zone getQnYunZone();
 
     /**
      * Gets locale.

@@ -1,7 +1,7 @@
 package run.halo.app.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import com.qiniu.common.Zone;
+//import com.qiniu.common.Zone;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.ApplicationContext;
@@ -321,7 +321,7 @@ public class OptionServiceImpl extends AbstractCrudService<Option, Integer> impl
             return DEFAULT_RSS_PAGE_SIZE;
         }
     }
-
+/*
     @Override
     public Zone getQnYunZone() {
         return getByProperty(QnYunProperties.OSS_ZONE).map(qiniuZone -> {
@@ -351,7 +351,7 @@ public class OptionServiceImpl extends AbstractCrudService<Option, Integer> impl
 
         }).orElseGet(Zone::autoZone);
     }
-
+*/
     @Override
     public Locale getLocale() {
         return getByProperty(BlogProperties.BLOG_LOCALE).map(localeStr -> {
